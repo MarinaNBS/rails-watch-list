@@ -1,5 +1,6 @@
 <div class="container">
   <h1>Movies</h1>
+  <p><%= link_to "Add new categorie", new_list_path %></p>
   <ul>
     <p><% @lists.each do |list| %></p>
      <p><%= link_to list.name, list_path(list) %></p>
