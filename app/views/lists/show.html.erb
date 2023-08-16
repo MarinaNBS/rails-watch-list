@@ -5,12 +5,12 @@
   <ul>
       <p><% @list.bookmarks.each do |bookmark| %></p>
       <p><%= bookmark.movie.title %></p>
-      <p><%= bookmark.movie.rating %></p>
+      <p><%=Rating: bookmark.movie.rating %></p>
       <div class="banner">
         <img src="<%= bookmark.movie.poster_url %>"width="800px">
       </div>
-      <p><%= bookmark.movie.overview %></p>
-      <p><%= bookmark.comment %></p>
+      <p><%= Overview: bookmark.movie.overview %></p>
+      <p><%= Comment: bookmark.comment %></p>
       <hr>
       <% end %>
       <p><%= link_to "Back to categories", lists_path %></p>
