@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Movies</h1>
+  <ul>
+    <p><%= @lists %></p>
+    <p><% @lists.each do |list| %></p>
+    <p><%= list.name %></p>
+    <a href="/lists/<%= list.id %>">See List</a>
+    <hr>
+    <% end %>
+  </ul>
+</div>

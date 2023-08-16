@@ -1,0 +1,9 @@
+<div class="container">
+  <%= simple_form_for @bookmark do |f| %>
+    <%= f.input :name %>
+    <%= f.association :list_id %>
+    <%= f.association :movie_id %>
+    <%= f.input :accepts, as: :boolean, checked_value: 'positive', unchecked_value: 'negative' %>
+    <%= f.button :submit %>
+  <% end %>
+</div>
