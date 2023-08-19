@@ -1,24 +1,19 @@
-<div class="container">
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1925&q=80)">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1566313891923-24df87b1b29f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80)">
   See any kind of movies
   </div>
-  <div class="card-trip">
+
+  <div class="title">
     <h1>My List</h1>
     <%= link_to "Add movie list", "/lists/new", class: "btn btn-success" %>
   </div>
-
   <ul>
-    <div class="container">
         <div class="card-trip">
           <% @lists.each do |list| %>
             <div class="card-trip-infos">
               <h2><%= link_to list.name, list_path(list) %></h2>
-              <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+              <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" />
               <hr>
             </div>
           <% end %>
         </div>
-    </div>
   </ul>
-
-</div>
