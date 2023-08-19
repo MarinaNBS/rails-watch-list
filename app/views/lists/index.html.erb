@@ -1,10 +1,15 @@
 <div class="container">
-  <h1>Categories</h1>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1925&q=80)">
+  See any kind of movies
+  </div>
   <p><%= link_to "Add new categorie", new_list_path %></p>
   <ul>
+  <h1>My List</h1>
+
     <p><% @lists.each do |list| %></p>
      <p><%= link_to list.name, list_path(list) %></p>
     <hr>
     <% end %>
   </ul>
+
 </div>
