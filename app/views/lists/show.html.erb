@@ -1,7 +1,7 @@
 <div class="container">
   <h1><%= @list.name %></h1>
   <p><%= link_to "add a movie", new_list_bookmark_path(@list)%></p>
-     <%= link_to lists_path,
+     <%= link_to root_path,
                 method: :delete,
                 data: { turbo_method: :delete, turbo_confirm: "Are you sure?" },
                 class: 'delete-link' do %>
